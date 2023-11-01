@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: midnightblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    color: #ededed;
+}
+h3{
+    color: #ededed;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.div-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.display{
+    width: 300px;
+    height: 300px;
+    background: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.number{
+    color: black;
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.div-operation-container{
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.btn{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #ededed;
+    font-size: 5rem;
+    font-weight: 600;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 50px #0ef;
+}
+.btn:active{
+    color: #ededed;
+    background: #0ef;
+}
+
+.negative-check-div{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.negative-check{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.negative-label{
+    color: #ededed;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.div-check10{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.check10-label{
+    color: #ededed;
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+.div-reset{
+    width: 70%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-reset{
+    height: 75px;
+    width: 150px;
+    border:  2px solid #ededed;
+    border-radius: 10px;
+    background: red;
+    color: #ededed;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.btn-reset:hover{
+    cursor: pointer;
+    background: #ededed;
+    color: red;
+    box-shadow: 0 0 50px red;
+}
+
+.alert-div{
+    display: none;
+    background: #ededed;
+    font-size: 3rem;
+    font-weight: 600;
+    color: red;
+    width: 70%;
+    border: 2px solid red;
+}
+
+@media only screen and (max-width: 768px){
+    .display{
+        width: 200px;
+        height: 200px;
+    }
+    .btn{
+        width: 100px;
+        height: 100px;
+        font-size: 2rem;
+    }
+
+    .negative-label{
+        font-size: 1.5rem;
+    }
+    .negative-check{
+        width: 30px;
+        height: 30px;
+    }
+    
+}
