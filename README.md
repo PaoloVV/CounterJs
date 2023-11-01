@@ -1,6 +1,6 @@
 # CounterJs di Viviani Paolo
 ## Counter Link
-[Link Counter](https://paolovv.github.io/CounterJs/)
+[Link Counter](https://paolovv.github.io/CounterJs/){:target="_blank"}
 
 ## Description
 
