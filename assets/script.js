@@ -30,7 +30,7 @@ const divContainer = document.createElement("div")
         negativeNumbersDiv.classList.add("negative-check-div")
     const negativeNumbers = document.createElement("input")
         negativeNumbers.type = "checkbox"
-        negativeNumbers.classList.add("negative-check")
+        negativeNumbers.classList.add("check")
     const negativeLabel = document.createElement("label")
         negativeLabel.innerText = "NEGATIVE NUMBERS"
         negativeLabel.classList.add("negative-label")
@@ -72,7 +72,7 @@ const divContainer = document.createElement("div")
 //X10
     const check10 = document.createElement("input")
         check10.type = "checkbox"
-        check10.classList.add("negative-check")
+        check10.classList.add("check")
     const check10Label = document.createElement("label")
         check10Label.innerText = "X 10"
         check10Label.classList.add("check10-label")
