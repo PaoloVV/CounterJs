@@ -149,7 +149,10 @@ h3{
     font-weight: 600;
     color: red;
     width: 70%;
+    min-height: 50px;
+    font-size: 2rem;
     border: 2px solid red;
+    margin-top: 15px;
 }
 
 @media only screen and (min-width: 351px) and (max-width: 768px){
@@ -186,6 +189,11 @@ h3{
     .btn-reset{
         font-size: 1.5rem;
     }
+
+    .alert-div{
+        font-size: 1rem;
+        font-weight: 500;
+    }
     
 }
 
@@ -221,5 +229,10 @@ h3{
         height: 40px;
         width: 80px;
         font-size: 1rem;
+    }
+
+    .alert-div{
+        font-size: 1rem;
+        font-weight: 500;
     }
 }

@@ -38,6 +38,12 @@ const divContainer = document.createElement("div")
     negativeNumbersDiv.appendChild(negativeNumbers)
     negativeNumbersDiv.appendChild(negativeLabel)
     divContainer.appendChild(negativeNumbersDiv)
+    negativeNumbers.addEventListener("click", hideAlert)
+
+//ALERT
+    const alertDiv = document.createElement("div")
+    alertDiv.classList.add("alert-div")
+    divContainer.appendChild(alertDiv)
 
 //DIV OPERATION
     const divOperation = document.createElement("div")
@@ -54,6 +60,7 @@ const divContainer = document.createElement("div")
         btnPlus10.innerText = "+ 10"
         btnPlus10.classList.add("btn")
         btnPlus10.style.display = "none"
+        btnPlus10.style.fontSize = "3rem"
         btnPlus10.addEventListener("click", addizione10)
 
     divOperation.appendChild(btnMinus)
@@ -90,10 +97,7 @@ const divContainer = document.createElement("div")
     btnReset.addEventListener("click", resetPage)
 
 
-//ALERT
-    const alertDiv = document.createElement("div")
-        alertDiv.classList.add("alert-div")
-    divContainer.appendChild(alertDiv)
+
     
 
 //FUNCTIONS
@@ -111,7 +115,7 @@ const divContainer = document.createElement("div")
             count --;
             if(count < 0){
                 alertDiv.style.display = "inline"
-                alertDiv.innerText = "Non posso contare in negativo.. Clicca sulla checkbox!"
+                alertDiv.innerText = "Ops! If you want to count negatively click on the checkbox above"
                 count ++;
             } else {
                 number.innerText = count
@@ -139,6 +143,11 @@ const divContainer = document.createElement("div")
         negativeNumbers.checked = false;
         check10.checked = false
         cambiaBtn()
+        alertDiv.style.display = "none"
+    }
+
+    function hideAlert(){
+        alertDiv.style.display = "none"
     }
     
     
