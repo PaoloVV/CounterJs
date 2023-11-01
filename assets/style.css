@@ -132,9 +132,15 @@ h3{
 }
 .btn-reset:hover{
     cursor: pointer;
+    box-shadow: 0 0 50px red;
+}
+.btn-reset:active{
     background: #ededed;
     color: red;
     box-shadow: 0 0 50px red;
+}
+.btn:after{
+    box-shadow: none;
 }
 
 .alert-div{
